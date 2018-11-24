@@ -1,11 +1,142 @@
 *{
   padding: 0;
   margin: 0;
+  /* box-sizing: border-box; */
 }
 
-#bg{
+body{
   width: 100%;
   height: 100%;
+}
 
-  background-image: url("mycoBg.png");
+
+#bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  background-image: url("assets/bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+#canvasBg{
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 10%;
+  width: 20%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#canvasContainer{
+  position: absolute;
+  z-index: -1;
+  margin-left: 3%;
+  margin-top: 200px;
+  width: 390px;
+  height: 600px;
+  color: pink;
+}
+
+.hLink{
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1000;
+  color: black
+  font-size: 22;
+  letter-spacing: 4;
+  text-decoration: none;
+  font-size: 36px;
+}
+
+.bgVid {
+position: absolute;
+width: 100%;
+height: 120%;
+object-fit: fill;
+z-index: -1000;
+}
+
+.ccVid {
+position: block;
+width: 100%;
+height: 100%;
+object-fit: fill;
+z-index: -1000;
+}
+
+.cc{
+  display: block;
+  height:25%;
+  width: 100%;
+  background-color: blue
+}
+
+#title{
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 70px;
+  width: 390px;
+  height: 100px;
+ line-height: 100px;
+  background-color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  color: black;
+  font-style: oblique;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+
+#nav{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 200px;
+  width: 390px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  letter-spacing: 16px;
+  position: absolute;
+
+}
+
+#nav a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  height:25%;
+  width: 100%;
+  line-height: 150px;
+  background-color: transparent;
+}
+
+#nav a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: crosshair;
+}
+
+
+.listLine{
+ width: 99.5%;
+ /* margin-left: 75px; */
+
+}
+
+#content{
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  margin-right: 5%;
+  width: 60%;
+  height: 730px;
+  background-color: pink;
 }

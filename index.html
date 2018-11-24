@@ -1,15 +1,71 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <header>
   <meta charset="UTF-8">
   <title> Mycocene </title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
-  <script type="text/javascript" src="mycelium.js"></script>
+<!-- <script language="javascript" type="text/javascript" src="sketch.js"></script>
+<script language="javascript" type="text/javascript" src="walker.js"></script> -->
+<script language="javascript" type="text/javascript" src="nav.js"></script>
 </header>
     <body>
-      <img src="assets/mycoBg.png" id="bg">
+
+
+        <!--P5.js Container-->
+      <div id="canvasContainer">
+        <div class='cc'>
+          <video autoplay muted loop class="ccVid">
+          <source src="assets/myco1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class='cc'>
+            <video autoplay muted loop class="ccVid">
+            <source src="assets/myco2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class='cc'>
+            <video autoplay muted loop class="ccVid">
+            <source src="assets/myco3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class='cc'>
+            <video autoplay muted loop class="ccVid">
+            <source src="assets/myco4.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+
+        <!--NAV BAR-->
+      <div id='title'><span class='hLink'>M Y C O C E N E<span></div>
+        <div id='nav'>
+
+        	<a href="#"><span>ABOUT<span></a>
+            		<hr class="listLine">
+        	<a href="#"><span>MEDIA<span></a>
+            		<hr class="listLine">
+         <a href="#" ><span>EXHIBITIONS<span></a>
+           		<hr class="listLine">
+        	<a href="#" ><span>TEAM<span></a>
+
+        </div>
+
+        <div id='content'>
+
+        </div>
+
+      <!--Background Image-->
+      <!-- <div id="bg">
+      </div> -->
+
+      <!-- Background Video-->
+  <video autoplay muted loop class="bgVid">
+    <source src="assets/RM.mp4" type="video/mp4">
+  </video>
+
+
       </body>
 </html>
