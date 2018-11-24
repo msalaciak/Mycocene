@@ -8,53 +8,128 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
-<!-- <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- <script language="javascript" type="text/javascript" src="sketch.js"></script>
 <script language="javascript" type="text/javascript" src="walker.js"></script> -->
-<script language="javascript" type="text/javascript" src="nav.js"></script>
+  <script language="javascript" type="text/javascript" src="nav.js"></script>
 </header>
-    <body>
+
+<body>
 
 
-        <!--P5.js Container-->
-      <div id="canvasContainer">
-        <div class='cc1'>
-          <video autoplay muted loop class="ccVid">
+  <!--P5.js Container-->
+  <div id="canvasContainer">
+    <div class='cc1'>
+      <video autoplay muted loop class="ccVid">
           <source src="assets/myco1.mp4" type="video/mp4">
           </video>
-        </div>
-        <div class='cc2'>
-            <video autoplay muted loop class="ccVid">
+    </div>
+    <div class='cc2'>
+      <video autoplay muted loop class="ccVid">
             <source src="assets/myco2.mp4" type="video/mp4">
             </video>
-        </div>
-        <div class='cc3'>
-            <video autoplay muted loop class="ccVid">
+    </div>
+    <div class='cc3'>
+      <video autoplay muted loop class="ccVid">
             <source src="assets/myco3.mp4" type="video/mp4">
             </video>
-        </div>
-        <div class='cc4'>
-            <video autoplay muted loop class="ccVid" >
+    </div>
+    <div class='cc4'>
+      <video autoplay muted loop class="ccVid">
             <source src="assets/myco4.mp4" type="video/mp4">
             </video>
-        </div>
-      </div>
+    </div>
+  </div>
 
-        <!--NAV BAR-->
-      <div id='title'><span class='hLink'>M Y C O C E N E<span></div>
+  <!--NAV BAR-->
+  <div id='title'><span class='hLink'>M Y C O C E N E<span></div>
         <div id='nav'>
 
-        	<a href="#"><span >ABOUT<span></a>
+        	<a href="#" onclick="about()"><span >ABOUT<span></a>
             		<!-- <hr class="listLine"> -->
-        	<a href="#"><span>MEDIA<span></a>
+        	<a href="#" onclick="media()"><span>MEDIA<span></a>
             		<!-- <hr class="listLine"> -->
-         <a href="#" ><span>EXHIBITS<span></a>
+         <a href="#" onclick="exhibits()"><span>EXHIBITS<span></a>
            		<!-- <hr class="listLine"> -->
-        	<a href="#" style='margin-bottom: 0;'><span>TEAM<span></a>
+        	<a href="#" style='margin-bottom: 0;' onclick="team()"><span>TEAM<span></a>
 
         </div>
 
-        <div id='content'>
+        <script>
+        function about() {
+    var x = document.getElementById('about');
+    var y = document.getElementById('media');
+    var z = document.getElementById('exhibits');
+    var w = document.getElementById('team');
 
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+        z.style.display = "none";
+        w.style.display = "none";
+    } else {
+        x.style.display = "none";
+    }
+  }
+
+  function media() {
+var x = document.getElementById('media');
+var y = document.getElementById('about');
+var z = document.getElementById('exhibits');
+var w = document.getElementById('team');
+
+if (x.style.display === "none") {
+  x.style.display = "block";
+  y.style.display = "none";
+  z.style.display = "none";
+  w.style.display = "none";
+} else {
+  x.style.display = "none";
+}
+}
+
+function exhibits() {
+var x = document.getElementById('exhibits');
+var y = document.getElementById('media');
+var z = document.getElementById('about');
+var w = document.getElementById('team');
+
+if (x.style.display === "none") {
+x.style.display = "block";
+y.style.display = "none";
+z.style.display = "none";
+w.style.display = "none";
+} else {
+x.style.display = "none";
+}
+}
+
+function team() {
+var x = document.getElementById('team');
+var y = document.getElementById('media');
+var z = document.getElementById('exhibits');
+var w = document.getElementById('about');
+
+if (x.style.display === "none") {
+x.style.display = "block";
+y.style.display = "none";
+z.style.display = "none";
+w.style.display = "none";
+} else {
+x.style.display = "none";
+}
+}
+  </script>
+
+
+        <div id='content'>
+          <div class='innerContent' id='about'>
+          </div>
+          <div class='innerContent' id='media'>
+          </div>
+          <div class='innerContent' id='exhibits'>
+          </div>
+          <div class='innerContent' id='team'>
+          </div>
         </div>
 
       <!--Background Image-->

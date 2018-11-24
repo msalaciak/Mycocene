@@ -184,3 +184,37 @@ span {
   height: 91%;
   background-color: rgba(255, 117, 233, 0.4);
 }
+
+/* INNER CONTENT */
+.innerContent{
+  position: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* INDIVIDUAL CONTENT */
+
+#about{
+  display: none;
+  background-color: orange;
+}
+#media{
+  display: none;
+  background-color: red;
+}
+#exhibits{
+  display: none;
+  background-color: blue;
+}
+#team{
+  display: none;
+  background-color: purple;
+}
+
+/* --------------------------------------    MEDIA QUERIES   --------------------------------------  */
+
+@media only screen and (min-width: 2000px) {
+  #content{
+    width: 70%;
+  }
+}
