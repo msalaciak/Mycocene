@@ -79,28 +79,25 @@ z-index: -1000;
   display: block;
   height:23%;
   width: 100%;
-  background-color: blue;
   margin-bottom: 4.5%;
 }
 .cc2{
   display: block;
   height:23%;
   width: 100%;
-  background-color: blue;
   margin-bottom: 4.5%;
 }
 .cc3{
   display: block;
   height:23%;
   width: 100%;
-  background-color: blue;
     margin-bottom: 4.5%;
 }
 .cc4{
   display: block;
   height:23%;
   width: 100%;
-  background-color: blue
+
 }
 
 /* TITLE */
@@ -182,7 +179,8 @@ span {
   margin-right: 5%;
   width: 60%;
   height: 91%;
-  background-color: rgba(255, 117, 233, 0.4);
+  /* background-color: rgba(255, 117, 233, 0.4); */
+  background-color: transparent;
 }
 
 /* INNER CONTENT */
@@ -194,13 +192,42 @@ span {
 
 /* INDIVIDUAL CONTENT */
 
+p{
+padding: 5%;
+line-height: 2;
+letter-spacing: 2;
+font-family: 'Open Sans', sans-serif;
+font-size: 12px;
+color: white;
+}
+
+img{
+  width: 80%;
+  height: 80%;
+  padding: 5%;
+  margin-left: 5%;
+}
+
+.conVid{
+  width: 80%;
+  height: 80%;
+  padding: 1%;
+  margin-left: 9%;
+}
+
+.flip{
+  transform: rotate(90deg);
+}
+
 #about{
   display: none;
-  background-color: orange;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.80);
 }
 #media{
   display: none;
-  background-color: red;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.80);
 }
 #exhibits{
   display: none;
