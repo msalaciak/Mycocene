@@ -29,35 +29,43 @@ body{
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-#canvasContainer{
-  position: absolute;
-  z-index: -1;
-  margin-left: 3%;
-  margin-top: 200px;
-  width: 390px;
-  height: 600px;
-  color: pink;
-}
+/* LINK FORMATTING */
 
 .hLink{
   font-family: 'Open Sans', sans-serif;
   z-index: 1000;
-  color: black
-  font-size: 22;
-  letter-spacing: 4;
+  color: white;
+  letter-spacing: 3;
   text-decoration: none;
-  font-size: 36px;
+  font-weight: bold;
+  font-size: 38px;
 }
+
+/* VBACKGROUND */
 
 .bgVid {
 position: absolute;
 width: 100%;
-height: 120%;
+height: 100%;
 object-fit: fill;
 z-index: -1000;
 }
 
-.ccVid {
+/* VBACKGROUND CONTAINER */
+
+#canvasContainer{
+  position: absolute;
+  z-index: -1;
+  margin-left: 3%;
+  margin-top: 185px;
+  width: 340px;
+  height: 500px;
+  color: pink;
+}
+
+/* VIDEO BACKGROUNDS  */
+
+.ccVid{
 position: block;
 width: 100%;
 height: 100%;
@@ -65,25 +73,52 @@ object-fit: fill;
 z-index: -1000;
 }
 
-.cc{
+/* INDIVIDUAL VBACKGROUND CONTAINERS */
+
+.cc1{
   display: block;
-  height:25%;
+  height:23%;
+  width: 100%;
+  background-color: blue;
+  margin-bottom: 4.5%;
+}
+.cc2{
+  display: block;
+  height:23%;
+  width: 100%;
+  background-color: blue;
+  margin-bottom: 4.5%;
+}
+.cc3{
+  display: block;
+  height:23%;
+  width: 100%;
+  background-color: blue;
+    margin-bottom: 4.5%;
+}
+.cc4{
+  display: block;
+  height:23%;
   width: 100%;
   background-color: blue
 }
 
+/* TITLE */
+
 #title{
   position: absolute;
   margin-left: 3%;
-  margin-top: 70px;
-  width: 390px;
-  height: 100px;
- line-height: 100px;
-  background-color: rgba(255, 255, 255, 0.85);
+  margin-top: 35px;
+  width: 340px;
+  height: 115px;
+ line-height: 115px;
+  background-color: rgba(0, 0, 0, 0.75);
   text-align: center;
   color: black;
   font-style: oblique;
 }
+
+/* TEXT FORMATTING  */
 
 span {
   display: inline-block;
@@ -91,6 +126,7 @@ span {
   line-height: normal;
 }
 
+/* NAVIGATION CONTAINER */
 
 #nav{
   font-family: sans-serif;
@@ -98,45 +134,53 @@ span {
   font-weight: bold;
   position: absolute;
   margin-left: 3%;
-  margin-top: 200px;
-  width: 390px;
-  height: 600px;
-  background-color: rgba(255, 255, 255, 0.3);
-  text-align: center;
-  letter-spacing: 16px;
-  position: absolute;
+  margin-top: 185px;
+  width: 340px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
 
+  /* TEXT*/
+  text-align: center;
+  letter-spacing: 15px;
 }
+
+/* INDIVIDUAL NAV CONTAINERS */
 
 #nav a{
   text-decoration: none;
   color: black;
   display: block;
-  height:25%;
+  height:23%;
   width: 100%;
-  line-height: 150px;
+  margin-bottom: 3.7%;
+  line-height: 115px;
+  border: 1px black solid;
   background-color: transparent;
 }
 
 #nav a:hover{
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   cursor: crosshair;
 }
 
+/* LINES */
 
 .listLine{
  width: 99.5%;
- /* margin-left: 75px; */
+ height: 1px;
+ color: black; /* old IE */
+ background-color: black; /* Modern Browsers */
 
 }
 
+/* CONTENT CONTAINER */
 #content{
   position: absolute;
   right: 0px;
-  top: 70px;
+  top: 35px;
   margin-right: 5%;
   width: 60%;
-  height: 730px;
-  background-color: pink;
+  height: 91%;
+  background-color: rgba(255, 117, 233, 0.4);
 }
