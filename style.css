@@ -211,8 +211,9 @@ img{
 .conVid{
   width: 80%;
   height: 80%;
-  padding: 1%;
-  margin-left: 9%;
+  padding: 0%;
+  margin-left: 10%;
+  /* object-fit: fill; */
 }
 
 .flip{

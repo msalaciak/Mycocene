@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
   <!-- <script language="javascript" type="text/javascript" src="sketch.js"></script>
@@ -146,12 +148,26 @@ x.style.display = "none";
             <img src='assets/hImg.jpg'>
             <img src='assets/vImg.jpg' class='flip'>
 
+            <div class='conVid'>
+            <video id="vid1" class="video-js" controls preload="auto" style='width: 100%; height: 100%; background-color: transparent;'
+   poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="assets/hVid.mp4" type='video/mp4'>
+    </video>
+  </div>
+
+  <div class='conVid'>
+  <video id="vid2" class="video-js" controls preload="auto" style='width: 100%; height: 100%; background-color: transparent;'
+poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+<source src="assets/vVid.mp4" type='video/mp4'>
+</video>
+</div>
+<!--
             <video class="conVid">
               <source src="assets/hVid.mp4" type="video/mp4">
             </video>
             <video class="conVid">
               <source src="assets/vVid.mp4" type="video/mp4">
-            </video>
+            </video> -->
 
           </div>
           <div class='innerContent' id='exhibits'>
@@ -169,6 +185,7 @@ x.style.display = "none";
     <source src="assets/RM.mp4" type="video/mp4">
   </video>
 
+  <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
 
       </body>
 </html>
